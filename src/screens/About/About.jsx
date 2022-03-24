@@ -1,7 +1,10 @@
 import React from "react";
 
 const About = () => {
-  return <div></div>;
-};
+  return (
+    <>
+    <h1>Katherine Golez</h1>
+  </>
+  )};
 
 export default About;
