@@ -3,7 +3,7 @@ import React from 'react';
 /* must remove borders in table */
 const Menu = () => {
   return (
-    <>
+    <div id="menu">
       <h1>Services</h1>
       <hr />
       <p>Each session includes my certified knowledge and application of Aromatherapy, Reiki, and various modalities of massage therapy for a truly holistic experience. To further assist in your healing journey, I also provide complementary organic oils, hot tea, and high-quality alkaline water.</p>
@@ -62,7 +62,7 @@ const Menu = () => {
       </tr>
       </table>
       
-    </>
+    </div>
   );
 };
 
