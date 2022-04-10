@@ -1,19 +1,28 @@
 * {
   margin:0;
-  padding:0;
+  padding:0 0 0 0;
   color: white;
+  font-family: 'Barlow', sans-serif;
 }
 
 #App {
-  width: 100%;
+  width: 95.7%;
   height: max-content;
+  padding: 1em 2em 1em 2em;
   background-image: url("./ferenc-horvath-skcFiBu91AA-unsplash.jpg");
   background-size: cover;
 }
 
 #header {
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
   padding: 1em 0 0 0;
 }
 
+.cursive {
+  font-family: 'Sacramento', cursive;
+}
+
+#about {
+  text-align: center;
+}
