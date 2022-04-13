@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Sacramento&display=swap" rel="stylesheet">
@@ -15,12 +14,9 @@
 </head>
 
 <body>
-  
-  <div id="nav" >
-    <h1 class="cursive">Esuna Rose</h1>
-    <h3 class="cursive nav-item">Services</h3>
-    <h3 class="cursive nav-item">Appointments</h3>
-    <h3 class="cursive nav-item">About</h3>
+
+  <div id="nav">
+    <h1 class="cursive left-align">Esuna Rose</h1>
   </div>
 
   <div id="App">
@@ -31,68 +27,74 @@
     </div>
 
 
-    <div id="menu">
-      <h1 class="cursive">Services</h1>
-      <p>Each session includes my certified knowledge and application of Aromatherapy, Reiki, and various modalities of
-        massage therapy for a truly holistic experience. To further assist in your healing journey, I also provide
-        complementary organic oils, hot tea, and high-quality alkaline water.</p>
-      <br />
-      <h2 class="cursive">Complementary Services:</h2>
-      <ul>
-        <li>Aromatherapy</li>
-        <li>Organic oils</li>
-        <li>Hot tea</li>
-        <li>Alkaline water</li>
-      </ul>
-      <br />
-      <h2 class="cursive">Office Session Times & Rates</h2>
-      <br />
-      <table>
-        <tr>
-          <td>60 minute</td>
-          <td>$150</td>
-        </tr>
-        <tr>
-          <td>75 minute</td>
-          <td>$170</td>
-        </tr>
-        <tr>
-          <td>90 minute</td>
-          <td>$200</td>
-        </tr>
-        <tr>
-          <td>120 minute</td>
-          <td>$250</td>
-        </tr>
-      </table>
-      <br />
-      <h2 class="cursive">Packaged Sessions</h2>
-      <p>Multiple sessions can also be purchased ahead of time to save you precious time and money.</p>
-      <br />
-      <table>
-        <tr>
-          <td>6 x 60 minute sessions</td>
-          <td><s>$900</s></td>
-          <td>$750</td>
-        </tr>
-        <tr>
-          <td>6 x 75 minute sessions</td>
-          <td><s>$1020</s></td>
-          <td>$850</td>
-        </tr>
-        <tr>
-          <td>6 x 90 minute sessions</td>
-          <td><s>$1200</s></td>
-          <td>$1000</td>
-        </tr>
-        <tr>
-          <td>6 x 120 minute sessions</td>
-          <td><s>$1500</s></td>
-          <td>$1250</td>
-        </tr>
-      </table>
+    <div id="services">
+      <div id="s-text">
+        <h1 id="services-text" class="cursive black-text">Services</h1>
+        <p id="services-description" class="black-text">Each session includes my certified knowledge and application of Aromatherapy, Reiki, and various modalities of
+          massage therapy for a truly holistic experience. To further assist in your healing journey, I also provide
+          complementary organic oils, hot tea, and high-quality alkaline water.</p>
+        <h1 id="comp-services-text" class="cursive black-text">Complementary Services:</h2>
+        <ul id="comp-services-list">
+          <li class="black-text">Aromatherapy</li>
+          <li class="black-text">Organic oils</li>
+          <li class="black-text">Hot tea</li>
+          <li class="black-text">Alkaline water</li>
+        </ul>
+      </div>
+      <img id="services-image" alt="services example photo" src="./public/IMG_2378.jpg">
     </div>
     <br />
+
+      <div id="rates">
+        <h2 class="cursive">Office Session Times & Rates</h2>
+        <br />
+        <table>
+          <tr>
+            <td>60 minute</td>
+            <td>$150</td>
+          </tr>
+          <tr>
+            <td>75 minute</td>
+            <td>$170</td>
+          </tr>
+          <tr>
+            <td>90 minute</td>
+            <td>$200</td>
+          </tr>
+          <tr>
+            <td>120 minute</td>
+            <td>$250</td>
+          </tr>
+        </table>
+        <br />
+        <h2 class="cursive">Packaged Sessions</h2>
+        <p>Multiple sessions can also be purchased ahead of time to save you precious time and money.</p>
+        <br />
+        <table>
+          <tr>
+            <td>6 x 60 minute sessions</td>
+            <td><s>$900</s></td>
+            <td>$750</td>
+          </tr>
+          <tr>
+            <td>6 x 75 minute sessions</td>
+            <td><s>$1020</s></td>
+            <td>$850</td>
+          </tr>
+          <tr>
+            <td>6 x 90 minute sessions</td>
+            <td><s>$1200</s></td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td>6 x 120 minute sessions</td>
+            <td><s>$1500</s></td>
+            <td>$1250</td>
+          </tr>
+        </table>
+      </div>
+    <br />
+
     <div id="schedule">
       <h1 class="cursive">Booking An Appointment</h1>
       <br />
