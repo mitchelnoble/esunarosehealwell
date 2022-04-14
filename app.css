@@ -74,6 +74,7 @@
 
 #rates {
   width: 100%;
+  height: 40em;
   text-align: center;
   display: grid;
   grid-template-areas:
@@ -81,7 +82,7 @@
   "card-1 card-2 card-3 card-4"
   ;
   grid-template-columns: 20em 20em 20em 20em;
-  grid-template-rows: 20em 20em;
+  grid-template-rows: 18em 18em;
   justify-content: space-evenly;
 }
 
@@ -104,15 +105,31 @@
 
 #card-1 {
   grid-area: "card-1";
+  border-top: solid 0.8em purple;
+  border-right: solid 0.8em white;
+  border-bottom: solid 0.8em white;
+  border-left: solid 0.8em white;
 }
 #card-2 {
   grid-area: "card-2";
+  border-top: solid 0.8em purple;
+  border-right: solid 0.8em lightblue;
+  border-bottom: solid 0.8em white;
+  border-left: solid 0.8em white;
 }
 #card-3 {
   grid-area: "card-3";
+  border-top: solid 0.8em purple;
+  border-right: solid 0.8em lightblue;
+  border-bottom: solid 0.8em mediumslateblue;
+  border-left: solid 0.8em white;
 }
 #card-4 {
   grid-area: "card-4";
+  border-top: solid 0.8em purple;
+  border-right: solid 0.8em lightblue;
+  border-bottom: solid 0.8em mediumslateblue;
+  border-left: solid 0.8em goldenrod;
 }
 
 
@@ -130,13 +147,24 @@
 
 .rates-card {
   width: 100%;
+  max-width: 20em;
   height: 100%;
+  max-height: 11.5em;
+  padding: 5em 0 2em 0;
   display: inline-block;
   align-items: center;
   justify-content: center;
   background: white;
   color: black;
   border-radius: 0.5em;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.clock-icon {
+
 }
 
 #about {
