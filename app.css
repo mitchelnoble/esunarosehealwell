@@ -31,10 +31,10 @@
 }
 
 #services {
-  width: 100em;
+  width: 100%;
   display: grid;
-  grid-template-areas: "a, a, b, b, b";
-  grid-template-columns: 3fr 6fr;
+  grid-template-areas: "a, b";
+  grid-template-columns: 50% 50%;
   row-gap: 0;
   column-gap: 0;
 }
@@ -42,7 +42,7 @@
 #s-text {
   grid-area: "a";
   width: 100%;
-  height: 25em;
+  height: 30em;
   background: white;
   text-align: center;
   display: flex;
@@ -54,22 +54,89 @@
 #services-text {
   font-size: 3rem;
 }
+
+#services-description {
+  padding: 0 1em 0 1.5em;
+}
+
 #comp-services-text {
   font-size: 2.5rem;
+}
+#comp-services-list {
+  font-size: 1.2rem;
 }
 
 #services-image {
   grid-area: "b";
-  width: 65%;
-  height: 25em;
+  max-width: 100%;
+  height: 30em;
 }
+
+#rates {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+  "title title title title",
+  "card-1 card-2 card-3 card-4"
+  ;
+  grid-template-columns: 20em 20em 20em 20em;
+  grid-template-rows: 20em 20em;
+  justify-content: space-evenly;
+}
+
+#rates-title {
+  padding: 0.5em 0 0 0;
+  grid-area: "title";
+  grid-column-start: 2;
+  grid-column-end: 4;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  width: 10em;
+  height: 4.4em;
+  text-align: center;
+  font-size: 3em;
+  background: white;
+  color: black;
+  border-radius: 0.3em;
+}
+
+#card-1 {
+  grid-area: "card-1";
+}
+#card-2 {
+  grid-area: "card-2";
+}
+#card-3 {
+  grid-area: "card-3";
+}
+#card-4 {
+  grid-area: "card-4";
+}
+
 
 .cursive {
   font-family: 'Sacramento', cursive;
 }
 
+.align-left {
+  text-align: left;
+}
+
 .black-text {
   color: black;
+}
+
+.rates-card {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: black;
+  border-radius: 0.5em;
 }
 
 #about {
