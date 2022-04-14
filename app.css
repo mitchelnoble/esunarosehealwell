@@ -34,7 +34,7 @@
   width: 100em;
   display: grid;
   grid-template-areas: "a, a, b, b, b";
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 3fr 6fr;
   row-gap: 0;
   column-gap: 0;
 }
@@ -49,6 +49,13 @@
   flex-flow: column;
   align-items: center;
   justify-content: center;
+}
+
+#services-text {
+  font-size: 3rem;
+}
+#comp-services-text {
+  font-size: 2.5rem;
 }
 
 #services-image {
