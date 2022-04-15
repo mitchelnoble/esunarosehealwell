@@ -89,15 +89,15 @@
 }
 
 #rates-title {
-  padding: 0.7em 0 0 0;
+  padding: 0.7em 0 0 1em;
   grid-area: "title";
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 0;
+  grid-column-end: 2;
   align-self: center;
   justify-self: center;
   align-content: center;
-  width: 10em;
-  height: 4.4em;
+  width: 11em;
+  height: 4.3em;
   text-align: center;
   font-size: 3em;
   background: white;
@@ -108,6 +108,10 @@
 
 #card-1 {
   grid-area: "card-1";
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
   border-top: solid 0.8em purple;
   border-right: solid 0.8em white;
   border-bottom: solid 0.8em white;
@@ -115,6 +119,10 @@
 }
 #card-2 {
   grid-area: "card-2";
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
   border-top: solid 0.8em purple;
   border-right: solid 0.8em lightblue;
   border-bottom: solid 0.8em white;
@@ -122,6 +130,10 @@
 }
 #card-3 {
   grid-area: "card-3";
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
   border-top: solid 0.8em purple;
   border-right: solid 0.8em lightblue;
   border-bottom: solid 0.8em mediumslateblue;
@@ -129,6 +141,10 @@
 }
 #card-4 {
   grid-area: "card-4";
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
   border-top: solid 0.8em purple;
   border-right: solid 0.8em lightblue;
   border-bottom: solid 0.8em mediumslateblue;
@@ -170,7 +186,16 @@
   height: 35em;
   border-radius: 50%;
   object-fit: cover;
-  border: solid 0.3em white;
+  border: solid 0.2em white;
+}
+
+.portrait-text {
+  font-size: 4rem;
+}
+
+.description {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
 }
 
 #about {
