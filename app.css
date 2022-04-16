@@ -55,17 +55,44 @@
 
 #services-text {
   font-size: 3rem;
+  padding: 0 0 0.5em 0;
 }
 
 #services-description {
   padding: 0 1em 0 1.5em;
+  font-size: 1.3rem;
 }
 
 #comp-services-text {
   font-size: 2.5rem;
 }
 #comp-services-list {
-  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  max-height: 8em;
+  display: grid;
+  grid-template-areas: "a o h w";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 8em;
+  justify-content: space-between;
+}
+
+#aromatherapy {
+  grid-area: "a";
+}
+#oil {
+  grid-area: "o";
+}
+#hot-tea {
+  grid-area: "h";
+}
+#water {
+  grid-area: "w";
+}
+
+.services-icon {
+  width: 6em;
+  height: 6em;
 }
 
 #services-image {
@@ -89,15 +116,15 @@
 }
 
 #rates-title {
-  padding: 0.7em 0 0 1em;
+  padding: 0.7em 0 0 18em;
   grid-area: "title";
   grid-column-start: 0;
   grid-column-end: 2;
   align-self: center;
   justify-self: center;
-  align-content: center;
-  width: 11em;
-  height: 4.3em;
+  align-content: right;
+  width: 30em;
+  height: 2.8em;
   text-align: center;
   font-size: 3em;
   background: white;
