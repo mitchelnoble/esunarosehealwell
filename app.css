@@ -33,6 +33,7 @@
 
 #services {
   width: 100%;
+  background: white;
   border: solid 0.15em black;
   display: grid;
   grid-template-areas: "a, b";
