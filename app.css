@@ -257,21 +257,60 @@
   grid-area: "description";
   align-self: center;
   font-size: 2.8rem;
-  padding: 0 0.3em 0 0;
+  padding: 0 0.3em 0 0.5em;
   grid-column-start: 5;
   grid-column-end: 9;
 }
 
 #schedule {
-  text-align: center;
+  width: 100%;
   margin: 2em 0 3em 0;
 }
 
 #appointment-title {
-  font-size: 5em;
+  padding: 0.3em 0 0.3em 0;
+  text-align: center;
+  width: 45%;
+  height: 1.5em;
+  margin: 0 0 1em 0;
+  font-size: 4em;
+  background: white;
+  border: solid 0.040em black;
+  border-left: none;
+  border-radius: 0 0.2em 0.2em 0;
 }
+
+#schedule-text-and-image {
+  height: 25em;
+  background: white;
+  border: solid 0.15em black;
+  text-align: center;
+  border-left: none;
+  border-right:none;
+  display: grid;
+  grid-template-areas: 
+  "a, b"
+  "a, b"
+  ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
 #appointment-text {
+  grid-area: "a";
+  grid-column-start: 1;
+  grid-row-start: 1;
   font-size: 2em;
+  text-align: left;
+  padding: 0 0 0 1em;
+}
+
+#flower-logo{
+grid-area: "b";
+grid-column-start: 2;
+ width: 14em;
+ height: 12em;
+ background: black
 }
 
 
