@@ -238,7 +238,7 @@
   padding: 0 0.5em 0 0;
   align-self: center;
   height: max-content;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   grid-column-start: 6;
   grid-column-end: 9;
 }
@@ -261,6 +261,19 @@
   grid-column-start: 5;
   grid-column-end: 9;
 }
+
+#schedule {
+  text-align: center;
+  margin: 2em 0 3em 0;
+}
+
+#appointment-title {
+  font-size: 5em;
+}
+#appointment-text {
+  font-size: 2em;
+}
+
 
 #portrait {
   width: 17em;
