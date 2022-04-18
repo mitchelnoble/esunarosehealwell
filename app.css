@@ -19,7 +19,7 @@
   width: 100%;
   height: 2.5em;
   padding: 0.5em 0em 0.5em 0.5em;
-  border-bottom: solid 0.1em white;
+  border-bottom: solid 0.1em grey;
   overflow: hidden;
   background: linear-gradient(to right,rgb(51,21,78), rgb(82,18,79), rgb(111,89,181)) ;
   position: fixed;
@@ -41,8 +41,7 @@
 
 #services {
   width: 100%;
-  background: white;
-  border: solid 0.15em black;
+  border: solid 0.2em grey;
   border-left: none;
   display: grid;
   grid-template-areas: "a, b";
@@ -54,8 +53,8 @@
 #s-text {
   grid-area: "a";
   width: 100%;
-  height: 30em;
-  background: white;
+  height: 31em;
+  background: linear-gradient(to right, rgb(99,77,169),white);
   text-align: center;
   display: flex;
   flex-flow: column;
@@ -110,12 +109,16 @@
 #services-image {
   grid-area: "b";
   max-width: 100%;
-  height: 30.5em;
+  height: 31em;
 }
 
 #rates {
   width: 100%;
-  height: 40em;
+  height: 43em;
+  background: white;
+  border: solid 0.2em grey;
+  border-right: none;
+  border-left: none;
   text-align: center;
   display: grid;
   grid-template-areas:
@@ -128,18 +131,18 @@
 }
 
 #rates-title {
-  padding: 0.7em 0 0 17em;
+  padding: 0.5em 0 0 17em;
   grid-area: "title";
   grid-column-start: 0;
   grid-column-end: 2;
   align-self: center;
   justify-self: center;
   align-content: right;
-  width: 30em;
+  width: 27em;
   height: 2.8em;
   text-align: center;
   font-size: 2.6em;
-  background: white;
+  background: linear-gradient(to right, rgb(99,77,169) 10%,white);
   color: black;
   border: solid 0.05em black;
   border-radius: 0.3em;
@@ -163,7 +166,7 @@
   grid-row-start: 2;
   grid-row-end: 2;
   border-top: solid 0.8em purple;
-  border-right: solid 0.8em lightblue;
+  border-right: solid 0.8em rgb(237,177,205);
   border-bottom: solid 0.8em white;
   border-left: solid 0.8em white;
 }
@@ -174,8 +177,8 @@
   grid-row-start: 2;
   grid-row-end: 2;
   border-top: solid 0.8em purple;
-  border-right: solid 0.8em lightblue;
-  border-bottom: solid 0.8em mediumslateblue;
+  border-right: solid 0.8em rgb(237,177,205);
+  border-bottom: solid 0.8em rgb(228,246,186);
   border-left: solid 0.8em white;
 }
 #card-4 {
@@ -185,9 +188,9 @@
   grid-row-start: 2;
   grid-row-end: 2;
   border-top: solid 0.8em purple;
-  border-right: solid 0.8em lightblue;
-  border-bottom: solid 0.8em mediumslateblue;
-  border-left: solid 0.8em goldenrod;
+  border-right: solid 0.8em rgb(237,177,205);
+  border-bottom: solid 0.8em rgb(228,246,186);
+  border-left: solid 0.8em rgb(219,152,87);
 }
 
 .cursive {
@@ -223,8 +226,8 @@
 #bundle {
   width: 100%;
   height: 28em;
-  background: white;
-  border: solid 0.15em black;
+  background: linear-gradient(to top, rgb(99,77,169),white);
+  border: solid 0.2em grey;
   display: grid;
   grid-template-areas: 
   "photo, photo, description, description"
@@ -283,47 +286,52 @@
 }
 
 #appointment-title {
+  grid-area: "title";
+  grid-column-start: 1;
+  grid-row-start: 1;
   padding: 0.3em 0 0.3em 0;
   text-align: center;
-  width: 45%;
+  width: 100%;
   height: 1.5em;
   margin: 0 0 1em 0;
   font-size: 4em;
-  background: white;
+  background: linear-gradient(to right, rgb(99,77,169) 8%,white);
   border: solid 0.040em black;
   border-left: none;
   border-radius: 0 0.2em 0.2em 0;
 }
 
 #schedule-text-and-image {
-  height: 27em;
+  padding: 3em 0 0 0;
+  height: 29em;
   background: white;
-  border: solid 0.15em black;
+  border: solid 0.2em grey;
   text-align: center;
   border-left: none;
   border-right:none;
   display: grid;
   grid-template-areas: 
-  "a, b"
-  "a, b"
+  "title, pic"
+  "text, pic"
   ;
+  justify-content: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 12em 12em;
 }
 
 #appointment-text {
-  grid-area: "a";
-  align-self: center;
+  grid-area: "text";
   grid-column-start: 1;
-  grid-row-start: 1;
-  font-size: 2em;
+  grid-row-start: 2;
+  align-self: center;
+  font-size: 1.5rem;
   text-align: left;
   padding: 0 0 0 1em;
 }
 
 #flower-logo{
-grid-area: "b";
-align-self: center;
+grid-area: "pic";
+grid-column-start: 2;
 justify-self: center;
 grid-column-start: 2;
  width: 28em;
@@ -347,6 +355,11 @@ grid-column-start: 2;
 .description {
   font-family: 'Barlow', sans-serif;
   font-size: 2rem;
+}
+
+.bold {
+  font-size: 2.5rem;
+  color: black;
 }
 
 #about {
