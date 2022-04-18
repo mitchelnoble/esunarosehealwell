@@ -108,7 +108,7 @@
 
 #services-image {
   grid-area: "b";
-  max-width: 100%;
+  width: 100%;
   height: 31em;
 }
 
@@ -178,7 +178,7 @@
   grid-row-end: 2;
   border-top: solid 0.8em purple;
   border-right: solid 0.8em rgb(237,177,205);
-  border-bottom: solid 0.8em rgb(228,246,186);
+  border-bottom: solid 0.8em rgb(172,74,71);
   border-left: solid 0.8em white;
 }
 #card-4 {
@@ -189,7 +189,7 @@
   grid-row-end: 2;
   border-top: solid 0.8em purple;
   border-right: solid 0.8em rgb(237,177,205);
-  border-bottom: solid 0.8em rgb(228,246,186);
+  border-bottom: solid 0.8em rgb(172,74,71);
   border-left: solid 0.8em rgb(219,152,87);
 }
 
