@@ -39,6 +39,10 @@
   height: 3.5em;
 }
 
+#nav-flower-logo:hover {
+  cursor: pointer;
+}
+
 #nav-title {
   padding: 0 0 0 1em;
 }
@@ -367,6 +371,7 @@ grid-column-start: 2;
 #portrait {
   width: 25em;
   height: 25em;
+  margin: 0.5em 0 1em 0;
   border-radius: 50%;
   object-fit: cover;
   object-position: right top;
