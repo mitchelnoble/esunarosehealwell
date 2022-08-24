@@ -20,6 +20,8 @@
   background-size: cover;
 }
 
+/*Navigation Bar*/
+
 #nav {
   width: 100%;
   height: 4em;
@@ -34,6 +36,7 @@
   top: 0;
 }
 
+
 #nav-flower-logo {
   width: 3.9em;
   height: 3.5em;
@@ -47,10 +50,17 @@
   padding: 0 0 0 1em;
 }
 
-#header {
-  text-align: center;
-  font-size: 3rem;
-  padding: 2em 1em 1em 1em;
+@media only screen and (max-width: 600px) {
+  #nav {
+    height: 3.7em;
+  }
+  #nav-flower-logo {
+    padding: 0 0.5em 0 0;
+  }
+  #nav-title {
+    padding: 0 0 0 0.5em;
+    font-size: 1.4rem;
+  }
 }
 
 #esuna-rose-title {
@@ -62,6 +72,35 @@
   border: solid 0.1em black;
   text-align: center;
 }
+
+/*Portrait Photo*/
+
+#portrait {
+  width: 25em;
+  height: 25em;
+  margin: 0.5em 0 1em 0;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: right top;
+  border: solid 0.2em white;
+}
+
+.portrait-text {
+  font-size: 4rem;
+}
+
+.description {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+ #portrait {
+   width: 20em;
+   height: 20em;
+ }
+}
+
 
 #services {
   width: 100%;
@@ -99,6 +138,7 @@
 
 #comp-services-text {
   font-size: 2.5rem;
+  margin: 0 0 0 0.5em;
   text-align: left;
 }
 #comp-services-list {
@@ -178,10 +218,10 @@
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 2;
-  border-top: solid 0.8em purple;
-  border-right: solid 0.8em white;
-  border-bottom: solid 0.8em white;
-  border-left: solid 0.8em white;
+  border-top: solid 0.7em purple;
+  border-right: solid 0.7em white;
+  border-bottom: solid 0.7em white;
+  border-left: solid 0.7em white;
 }
 #card-2 {
   grid-area: "card-2";
@@ -189,10 +229,10 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 2;
-  border-top: solid 0.8em purple;
-  border-right: solid 0.8em rgb(237,177,205);
-  border-bottom: solid 0.8em white;
-  border-left: solid 0.8em white;
+  border-top: solid 0.7em purple;
+  border-right: solid 0.7em rgb(237,177,205);
+  border-bottom: solid 0.7em white;
+  border-left: solid 0.7em white;
 }
 #card-3 {
   grid-area: "card-3";
@@ -200,10 +240,10 @@
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 2;
-  border-top: solid 0.8em purple;
-  border-right: solid 0.8em rgb(237,177,205);
-  border-bottom: solid 0.8em rgb(172,74,71);
-  border-left: solid 0.8em white;
+  border-top: solid 0.7em purple;
+  border-right: solid 0.7em rgb(237,177,205);
+  border-bottom: solid 0.7em rgb(172,74,71);
+  border-left: solid 0.7em white;
 }
 #card-4 {
   grid-area: "card-4";
@@ -211,10 +251,10 @@
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 2;
-  border-top: solid 0.8em purple;
-  border-right: solid 0.8em rgb(237,177,205);
-  border-bottom: solid 0.8em rgb(172,74,71);
-  border-left: solid 0.8em rgb(219,152,87);
+  border-top: solid 0.7em purple;
+  border-right: solid 0.7em rgb(237,177,205);
+  border-bottom: solid 0.7em rgb(172,74,71);
+  border-left: solid 0.7em rgb(219,152,87);
 }
 
 .cursive {
@@ -366,25 +406,6 @@ grid-column-start: 2;
 #about {
   text-align: center;
   padding: 5em 0 2em 0;
-}
-
-#portrait {
-  width: 25em;
-  height: 25em;
-  margin: 0.5em 0 1em 0;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: right top;
-  border: solid 0.2em white;
-}
-
-.portrait-text {
-  font-size: 4rem;
-}
-
-.description {
-  font-family: 'Barlow', sans-serif;
-  font-size: 2rem;
 }
 
 .bold {
