@@ -101,6 +101,7 @@
  }
 }
 
+/*Services Section*/
 
 #services {
   width: 100%;
@@ -112,6 +113,48 @@
   row-gap: 0;
   column-gap: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  #services {
+    height: auto;
+    width: auto;
+    display: grid;
+    gap: 0;
+    grid-template-areas: "a","b","c","d","e";
+    grid-template-columns: 100%;
+  }
+  #s-text {
+    display: grid;
+    gap: 0%;
+    column-gap: 0%;
+  }
+
+  #services-text {
+    grid-area: "a";
+    height: 10em;
+    font-size: 0.5rem;
+    overflow: hidden;
+  }
+  #services-description {
+    grid-area: "b";
+    height: 20em;
+    font-size: 0.5rem;
+    overflow: hidden;
+  }
+  #comp-services-text {
+    height: 7.5em;
+    grid-area: "c";
+  }
+  #comp-services-list {
+    height: 10em;
+    font-size: 0.8rem;
+    grid-area: "d";
+  }
+  #services-image {
+    height: 30px;
+    grid-area: "e";
+  }
+ }
 
 #s-text {
   grid-area: "a";
@@ -138,7 +181,7 @@
 
 #comp-services-text {
   font-size: 2.5rem;
-  margin: 0 0 0 0.5em;
+  padding: 0 0 0 0.5em;
   text-align: left;
 }
 #comp-services-list {
@@ -175,6 +218,7 @@
   width: 100%;
   height: 31em;
 }
+
 
 #rates {
   width: 100%;
