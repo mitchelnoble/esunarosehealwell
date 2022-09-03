@@ -3,6 +3,12 @@
   src: url(./public/fonts/alex-brush/AlexBrush-Regular.ttf);
 }
 
+@media only screen and (max-width: 600px) {
+  .mobile {
+    font-size: 0.8rem;
+  }
+}
+
 * {
   margin:0;
   padding:0 0 0 0;
@@ -114,48 +120,6 @@
   column-gap: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  #services {
-    height: auto;
-    width: auto;
-    display: grid;
-    gap: 0;
-    grid-template-areas: "a","b","c","d","e";
-    grid-template-columns: 100%;
-  }
-  #s-text {
-    display: grid;
-    gap: 0%;
-    column-gap: 0%;
-  }
-
-  #services-text {
-    grid-area: "a";
-    height: 10em;
-    font-size: 0.5rem;
-    overflow: hidden;
-  }
-  #services-description {
-    grid-area: "b";
-    height: 20em;
-    font-size: 0.5rem;
-    overflow: hidden;
-  }
-  #comp-services-text {
-    height: 7.5em;
-    grid-area: "c";
-  }
-  #comp-services-list {
-    height: 10em;
-    font-size: 0.8rem;
-    grid-area: "d";
-  }
-  #services-image {
-    height: 30px;
-    grid-area: "e";
-  }
- }
-
 #s-text {
   grid-area: "a";
   width: 100%;
@@ -168,7 +132,7 @@
   justify-content: center;
 }
 
-#services-text {
+#services-header {
   font-size: 2.7rem;
   text-align: left;
   padding: 0 0 0.5em 0.5em;
@@ -179,7 +143,7 @@
   font-size: 1.3rem;
 }
 
-#comp-services-text {
+#comp-services-header {
   font-size: 2.5rem;
   padding: 0 0 0 0.5em;
   text-align: left;
@@ -219,6 +183,29 @@
   height: 31em;
 }
 
+@media only screen and (max-width: 600px) {
+  #services {
+    height: max-content;
+    width: 100%;
+    display: flex;
+  }
+  #s-text {
+    height: 100%;
+    width: 100%;
+  }
+  .services-icon {
+    width: 4em;
+    height: 4em;
+  }
+  #services-image {
+    display: none;
+    overflow: hidden;
+  }
+  #services-image-link {
+    display: none;
+    overflow: hidden;
+  }
+ }
 
 #rates {
   width: 100%;
