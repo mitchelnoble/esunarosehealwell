@@ -304,10 +304,10 @@
     width: 100%;
     display: grid;
   grid-template-areas:
-  "title",
-  "card-1", 
-  "card-2", 
-  "card-3", 
+  "title"
+  "card-1"
+  "card-2"
+  "card-3"
   "card-4"
   ;
   grid-template-columns: 100%;
@@ -315,13 +315,10 @@
   overflow: hidden;
   }
   #rates-title {
+    grid-area: title;
     padding: 0.5em 2em 0 2em;
-    width: 50em;
-    grid-area: "title";
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    margin-bottom: 5.5em;
+    width: 100%;
     font-size: 1.2rem;
   }
   .rates-card {
@@ -330,32 +327,16 @@
     justify-self: center;
   }
   #card-1 {
-    grid-area: "card-1";
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-area: card-1;
   }
   #card-2 {
-    grid-area: "card-2";
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-area: card-2;
   }
   #card-3 {
-    grid-area: "card-3";
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 4;
-    grid-row-end: 4;
+    grid-area: card-3;
   }
   #card-4 {
-    grid-area: "card-4";
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 5;
-    grid-row-end: 5;
+    grid-area: card-4;
   }
 }
 
@@ -568,42 +549,46 @@ justify-self: center;
 padding-top: 0;
 height: max-content;
 grid-template-areas: 
-"title", 
-"text",
-"pic",
+"a"
+"b" 
+"t"
+"p"
 ;
-grid-template-columns: 100%;
-grid-template-rows: inherit inherit inherit;
+grid-template-columns: 1fr;
+grid-template-rows: inherit, inherit, inherit, inherit;
 }
-
 #appointment-title {
+  grid-area: a;
   margin: 0;
   height: 1.4em;
   width: 50em;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
   justify-self: center;
-  align-items: center;
   font-size: 1.8rem;
 }
-#appointment-text {
-  padding: 0 0.5em 0 0.5em;
-  width: inherit;
-  grid-column-start: 1;
-  grid-column-end: 1;
+#book-button-form {
+  grid-area: b;
   grid-row-start: 2;
   grid-row-end: 2;
+}
+#book-button {
+  width: 12em;
+  height: 4em;
+  font-size: 1rem;
+}
+#book-button:hover {
+  cursor: pointer;
+  background-color: rgb(111,89,181);
+}
+#appointment-text {
+  grid-area: t;
+  padding: 0 0.5em 0 0.5em;
+  width: inherit;
   font-size: 1.1rem;
   text-align: center;
 }
 #flower-logo {
+  grid-area: p;
   width: max-content;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 3;
-  grid-row-end: 3;
 }
 .bold {
   font-size: 1.8rem;
