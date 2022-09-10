@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Alex;
+  src: url(./public/fonts/alex-brush/AlexBrush-Regular.ttf);
+}
+
+@media only screen and (max-width: 1175px) {
+  .mobile {
+    font-size: 0.8rem;
+  }
+}
+
 * {
   margin:0;
   padding:0 0 0 0;
@@ -10,39 +21,138 @@
   width: 100%;
   height: max-content;
   padding: 1em 0em 1em 0em;
-  background-image: url("./public/Background.png");
+  background-image: url("./public/images/Background.png");
   background-attachment: fixed;
   background-size: cover;
 }
 
+/*Navigation Bar*/
+
 #nav {
   width: 100%;
-  height: 2.5em;
+  height: 4em;
   padding: 0.5em 0em 0.5em 0.5em;
-  border-bottom: solid 0.1em white;
+  display: grid;
+  grid-template-areas: "logo name link";
+  grid-template-columns: 1fr 7fr 2fr;
+  grid-template-rows: 100%;
+  border-bottom: solid 0.1em grey;
   overflow: hidden;
   background: linear-gradient(to right,rgb(51,21,78), rgb(82,18,79), rgb(111,89,181)) ;
   position: fixed;
   top: 0;
 }
 
-#header {
-  text-align: center;
-  font-size: 3rem;
-  padding: 2em 1em 1em 1em;
+
+#nav-flower-logo {
+  grid-area: logo;
+  width: 3.9em;
+  height: 3.5em;
+}
+
+#nav-flower-logo:hover {
+  cursor: pointer;
+}
+
+#nav-title {
+  grid-area: name;
+  align-self: center;
+}
+
+#nav-button-form {
+  grid-area: link;
+  align-self: center;
+}
+#nav-button {
+  width: 9em;
+  height: 3em;
+  font-size: 1.3rem;
+  border-radius: 0.7em;
+}
+#nav-button:hover {
+  cursor: pointer;
+  background-color: rgb(111,89,181);
+}
+
+@media only screen and (max-width: 1175px) {
+  #nav {
+    height: 3.7em;
+  }
+  #nav-flower-logo {
+    padding: 0 0.5em 0 0;
+  }
+  #nav-title {
+    padding: 0 0 0 0.5em;
+    font-size: 1.4rem;
+  }
+  #nav-button {
+    width: 8em;
+    height: 3em;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #nav {
+    grid-template-columns: 1.5fr 6fr 2.5fr;
+  }
+  #nav-title {
+    padding: 0 0 0 0.5em;
+    font-size: 1.1rem;
+    justify-self: center;
+  }
+  #nav-button-form {
+    justify-self: end;
+  }
+  #nav-button {
+    width: 6em;
+    height: 3em;
+    font-size: 0.8rem;
+  }
 }
 
 #esuna-rose-title {
-  width: 20em;
-  height: 8em;
+  width: 8em;
+  height: 6em;
+  font-family: 'Lemon','Sacramento', sans-serif;
   border-radius: 50%;
-  border: solid 0.15em black;
+  background: white;
+  border: solid 0.1em black;
+  text-align: center;
 }
+
+/*Portrait Photo*/
+
+#portrait {
+  width: 25em;
+  height: 25em;
+  margin: 0.5em 0 1em 0;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: right top;
+  border: solid 0.2em white;
+}
+
+.portrait-text {
+  font-size: 4rem;
+}
+
+.description {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1175px) {
+ #portrait {
+   width: 20em;
+   height: 20em;
+ }
+}
+
+/*Services Section*/
 
 #services {
   width: 100%;
-  background: white;
-  border: solid 0.15em black;
+  border: solid 0.2em grey;
   border-left: none;
   display: grid;
   grid-template-areas: "a, b";
@@ -54,8 +164,8 @@
 #s-text {
   grid-area: "a";
   width: 100%;
-  height: 30em;
-  background: white;
+  height: 31em;
+  background: linear-gradient(to right, rgb(99,77,169),white);
   text-align: center;
   display: flex;
   flex-flow: column;
@@ -63,10 +173,11 @@
   justify-content: center;
 }
 
-#services-text {
+#services-header {
   font-size: 2.7rem;
   text-align: left;
-  padding: 0 0 0.5em 0.5em;
+  align-self: center;
+  padding: 0.5em 0 0.5em 1em;
 }
 
 #services-description {
@@ -74,8 +185,9 @@
   font-size: 1.3rem;
 }
 
-#comp-services-text {
+#comp-services-header {
   font-size: 2.5rem;
+  padding: 0 0 0 1em;
   text-align: left;
 }
 #comp-services-list {
@@ -109,13 +221,50 @@
 
 #services-image {
   grid-area: "b";
-  max-width: 100%;
-  height: 30.5em;
+  object-fit: cover;
+  width: 100%;
+  height: 31em;
 }
+
+@media only screen and (max-width: 1175px) {
+  #services {
+    height: max-content;
+    width: 100%;
+    display: flex;
+  }
+  #s-text {
+    height: 100%;
+    width: 100%;
+  }
+  .services-icon {
+    width: 4em;
+    height: 4em;
+  }
+  #services-header {
+    font-size: 1.8rem;
+  }
+  #comp-services-header {
+    font-size: 1.8rem;
+  }
+  #services-image {
+    display: none;
+    overflow: hidden;
+  }
+  #services-image-link {
+    display: none;
+    overflow: hidden;
+  }
+ }
+
+/* Rates Section */
 
 #rates {
   width: 100%;
-  height: 40em;
+  height: 41em;
+  background: white;
+  border: solid 0.2em grey;
+  border-right: none;
+  border-left: none;
   text-align: center;
   display: grid;
   grid-template-areas:
@@ -128,18 +277,18 @@
 }
 
 #rates-title {
-  padding: 0.7em 0 0 17em;
+  padding: 0.5em 0 0 12em;
   grid-area: "title";
   grid-column-start: 0;
   grid-column-end: 2;
   align-self: center;
   justify-self: center;
   align-content: right;
-  width: 30em;
-  height: 2.8em;
+  width: 22em;
+  height: 2.4em;
   text-align: center;
   font-size: 2.6em;
-  background: white;
+  background: linear-gradient(to right, rgb(99,77,169) 10%,white);
   color: black;
   border: solid 0.05em black;
   border-radius: 0.3em;
@@ -151,10 +300,10 @@
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 2;
-  border-top: solid 0.8em purple;
-  border-right: solid 0.8em white;
-  border-bottom: solid 0.8em white;
-  border-left: solid 0.8em white;
+  border-top: solid 0.7em purple;
+  border-right: solid 0.7em white;
+  border-bottom: solid 0.7em white;
+  border-left: solid 0.7em white;
 }
 #card-2 {
   grid-area: "card-2";
@@ -162,10 +311,10 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 2;
-  border-top: solid 0.8em purple;
-  border-right: solid 0.8em lightblue;
-  border-bottom: solid 0.8em white;
-  border-left: solid 0.8em white;
+  border-top: solid 0.7em purple;
+  border-right: solid 0.7em rgb(237,177,205);
+  border-bottom: solid 0.7em white;
+  border-left: solid 0.7em white;
 }
 #card-3 {
   grid-area: "card-3";
@@ -173,10 +322,10 @@
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 2;
-  border-top: solid 0.8em purple;
-  border-right: solid 0.8em lightblue;
-  border-bottom: solid 0.8em mediumslateblue;
-  border-left: solid 0.8em white;
+  border-top: solid 0.7em purple;
+  border-right: solid 0.7em rgb(237,177,205);
+  border-bottom: solid 0.7em rgb(172,74,71);
+  border-left: solid 0.7em white;
 }
 #card-4 {
   grid-area: "card-4";
@@ -184,14 +333,56 @@
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 2;
-  border-top: solid 0.8em purple;
-  border-right: solid 0.8em lightblue;
-  border-bottom: solid 0.8em mediumslateblue;
-  border-left: solid 0.8em goldenrod;
+  border-top: solid 0.7em purple;
+  border-right: solid 0.7em rgb(237,177,205);
+  border-bottom: solid 0.7em rgb(172,74,71);
+  border-left: solid 0.7em rgb(219,152,87);
+}
+
+@media only screen and (max-width: 1175px) {
+  #rates {
+    height: 98em;
+    width: 100%;
+    display: grid;
+  grid-template-areas:
+  "title"
+  "card-1"
+  "card-2"
+  "card-3"
+  "card-4"
+  ;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5em 23em 23em 23em 23em;
+  overflow: hidden;
+  }
+  #rates-title {
+    grid-area: title;
+    align-self: flex-start;
+    padding: 0.5em 2em 0 2em;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .rates-card {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  #card-1 {
+    grid-area: card-1;
+  }
+  #card-2 {
+    grid-area: card-2;
+  }
+  #card-3 {
+    grid-area: card-3;
+  }
+  #card-4 {
+    grid-area: card-4;
+  }
 }
 
 .cursive {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Alex','Sacramento', cursive;
 }
 
 .align-left {
@@ -220,11 +411,13 @@
   font-size: 2rem;
 }
 
+/* Bundle Section */
+
 #bundle {
   width: 100%;
-  height: 28em;
-  background: white;
-  border: solid 0.15em black;
+  height: 31em;
+  background: linear-gradient(to top, rgb(99,77,169),white);
+  border: solid 0.2em grey;
   display: grid;
   grid-template-areas: 
   "photo, photo, description, description"
@@ -239,7 +432,8 @@
 #office-photo {
   grid-area: "photo";
   max-width: 100%;
-  height: 30em;
+  height: 31em;
+  object-fit: cover;
   grid-column-start: 1;
   grid-column-end: 5;
 }
@@ -277,78 +471,180 @@
   grid-column-end: 9;
 }
 
+@media only screen and (max-width: 1175px) {
+  #bundle {
+    height: max-content;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 5em);
+  }
+  #office-photo {
+    height: 100%;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    object-fit: cover;
+  }
+  #bundles-text {
+    padding: 1em, 0, 1em, 0;
+    height: auto;
+    width: auto;
+    padding: 0.5em 0.2em;
+    font-size: 1.6rem;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  #bundles {
+    padding: 2em 0 0 0;
+    font-size: 1.5rem;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  
+}
+
+/* Schedule Section  */
+
 #schedule {
+  height: max-content;
   width: 100%;
   margin: 2em 0 3em 0;
 }
 
 #appointment-title {
+  grid-area: "title";
+  grid-column-start: 1;
+  grid-row-start: 1;
   padding: 0.3em 0 0.3em 0;
   text-align: center;
-  width: 45%;
-  height: 1.5em;
+  width: 100%;
+  height: 1.3em;
   margin: 0 0 1em 0;
   font-size: 4em;
-  background: white;
+  background: linear-gradient(to right, rgb(99,77,169) 8%,white);
   border: solid 0.040em black;
   border-left: none;
   border-radius: 0 0.2em 0.2em 0;
 }
 
 #schedule-text-and-image {
-  height: 27em;
+  padding: 3em 0 0 0;
+  height: 36em;
   background: white;
-  border: solid 0.15em black;
+  border: solid 0.2em grey;
   text-align: center;
   border-left: none;
   border-right:none;
   display: grid;
   grid-template-areas: 
-  "a, b"
-  "a, b"
+  "title, pic"
+  "text, pic"
   ;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 12em 12em;
+  justify-content: center;
 }
-
-#appointment-text {
-  grid-area: "a";
+#book-button-form {
+  justify-self: center;
   align-self: center;
+}
+#book-button {
+  width: 12em;
+  height: 3em;
+  font-size: 1.2rem;
+  border-radius: 0.7em;
+}
+#book-button:hover {
+  cursor: pointer;
+  background-color: rgb(111,89,181);
+}
+#appointment-text {
+  grid-area: "text";
   grid-column-start: 1;
-  grid-row-start: 1;
-  font-size: 2em;
+  grid-row-start: 2;
+  align-self: center;
+  font-size: 1.5rem;
   text-align: left;
   padding: 0 0 0 1em;
 }
 
 #flower-logo{
-grid-area: "b";
-align-self: center;
-justify-self: center;
+grid-area: "pic";
 grid-column-start: 2;
+justify-self: center;
  width: 28em;
  height: 24em;
  background: black
 }
 
-
-#portrait {
-  width: 17em;
-  height: 35em;
-  border-radius: 50%;
-  object-fit: cover;
-  border: solid 0.2em white;
-}
-
-.portrait-text {
-  font-size: 4rem;
-}
-
-.description {
-  font-family: 'Barlow', sans-serif;
-  font-size: 2rem;
-}
-
 #about {
   text-align: center;
+  padding: 5em 0 2em 0;
+}
+
+.bold {
+  font-size: 2.5rem;
+  color: black;
+}
+
+@media only screen and (max-width: 1175px) {
+#schedule {
+  height: max-content;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#schedule-text-and-image {
+padding-top: 0;
+height: max-content;
+grid-template-areas: 
+"a"
+"b" 
+"t"
+"p"
+;
+grid-template-columns: 1fr;
+grid-template-rows: 0.3fr 0.2fr 0.8fr 1fr;
+}
+#appointment-title {
+  grid-area: a;
+  margin: 0;
+  height: 1.4em;
+  width: 50em;
+  justify-self: center;
+  font-size: 1.8rem;
+}
+#book-button-form {
+  grid-area: b;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+#appointment-text {
+  grid-area: t;
+  padding: 0 0.5em 0 0.5em;
+  width: inherit;
+  font-size: 1.1rem;
+  text-align: center;
+}
+#flower-logo {
+  grid-area: p;
+  width: max-content;
+}
+.bold {
+  font-size: 1.8rem;
+}
+}
+@media only screen and (max-width: 500px) {
+  #appointment-text {
+    font-size: 1rem;
+  }
+  .bold {
+    font-size: 1.3rem;
+  }
 }
