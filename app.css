@@ -32,9 +32,10 @@
   width: 100%;
   height: 4em;
   padding: 0.5em 0em 0.5em 0.5em;
-  display: flex;
-  align-items: center;
-  justify-content: left;
+  display: grid;
+  grid-template-areas: "logo name link";
+  grid-template-columns: 1fr 7fr 2fr;
+  grid-template-rows: 100%;
   border-bottom: solid 0.1em grey;
   overflow: hidden;
   background: linear-gradient(to right,rgb(51,21,78), rgb(82,18,79), rgb(111,89,181)) ;
@@ -44,6 +45,7 @@
 
 
 #nav-flower-logo {
+  grid-area: logo;
   width: 3.9em;
   height: 3.5em;
 }
@@ -53,7 +55,23 @@
 }
 
 #nav-title {
-  padding: 0 0 0 1em;
+  grid-area: name;
+  align-self: center;
+}
+
+#nav-button-form {
+  grid-area: link;
+  align-self: center;
+}
+#nav-button {
+  width: 9em;
+  height: 3em;
+  font-size: 1.3rem;
+  border-radius: 0.7em;
+}
+#nav-button:hover {
+  cursor: pointer;
+  background-color: rgb(111,89,181);
 }
 
 @media only screen and (max-width: 1175px) {
@@ -66,6 +84,29 @@
   #nav-title {
     padding: 0 0 0 0.5em;
     font-size: 1.4rem;
+  }
+  #nav-button {
+    width: 8em;
+    height: 3em;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #nav {
+    grid-template-columns: 1.5fr 6fr 2.5fr;
+  }
+  #nav-title {
+    padding: 0 0 0 0.5em;
+    font-size: 1.1rem;
+    justify-self: center;
+  }
+  #nav-button-form {
+    justify-self: end;
+  }
+  #nav-button {
+    width: 6em;
+    height: 3em;
+    font-size: 0.8rem;
   }
 }
 
@@ -300,7 +341,7 @@
 
 @media only screen and (max-width: 1175px) {
   #rates {
-    height: 94em;
+    height: 98em;
     width: 100%;
     display: grid;
   grid-template-areas:
@@ -310,14 +351,14 @@
   "card-3"
   "card-4"
   ;
-  grid-template-columns: 100%;
-  grid-template-rows: 10em 21em 21em 21em 21em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5em 23em 23em 23em 23em;
   overflow: hidden;
   }
   #rates-title {
     grid-area: title;
+    align-self: flex-start;
     padding: 0.5em 2em 0 2em;
-    margin-bottom: 5.5em;
     width: 100%;
     font-size: 1.2rem;
   }
@@ -471,6 +512,7 @@
 /* Schedule Section  */
 
 #schedule {
+  height: max-content;
   width: 100%;
   margin: 2em 0 3em 0;
 }
@@ -493,7 +535,7 @@
 
 #schedule-text-and-image {
   padding: 3em 0 0 0;
-  height: 29em;
+  height: 36em;
   background: white;
   border: solid 0.2em grey;
   text-align: center;
@@ -508,7 +550,20 @@
   grid-template-rows: 12em 12em;
   justify-content: center;
 }
-
+#book-button-form {
+  justify-self: center;
+  align-self: center;
+}
+#book-button {
+  width: 12em;
+  height: 3em;
+  font-size: 1.2rem;
+  border-radius: 0.7em;
+}
+#book-button:hover {
+  cursor: pointer;
+  background-color: rgb(111,89,181);
+}
 #appointment-text {
   grid-area: "text";
   grid-column-start: 1;
@@ -570,16 +625,6 @@ grid-template-rows: 0.3fr 0.2fr 0.8fr 1fr;
   grid-row-start: 2;
   grid-row-end: 2;
 }
-#book-button {
-  width: 12em;
-  height: 4em;
-  font-size: 1rem;
-  border-radius: 0.7em;
-}
-#book-button:hover {
-  cursor: pointer;
-  background-color: rgb(111,89,181);
-}
 #appointment-text {
   grid-area: t;
   padding: 0 0.5em 0 0.5em;
@@ -595,4 +640,11 @@ grid-template-rows: 0.3fr 0.2fr 0.8fr 1fr;
   font-size: 1.8rem;
 }
 }
-
+@media only screen and (max-width: 500px) {
+  #appointment-text {
+    font-size: 1rem;
+  }
+  .bold {
+    font-size: 1.3rem;
+  }
+}
