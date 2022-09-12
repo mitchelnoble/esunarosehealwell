@@ -644,5 +644,7 @@ grid-template-rows: 0.3fr 0.2fr 0.8fr 1fr;
 @media only screen and (max-width: 500px) {
   #appointment-text {
     font-size: 0.8rem;
+    color: inherit;
+    text-decoration: none;
   }
 }
