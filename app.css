@@ -562,7 +562,7 @@
   align-self: center;
 }
 #book-button {
-  width: 12em;
+  width: 12.3em;
   height: 3em;
   font-size: 1.2rem;
   border-radius: 0.7em;
@@ -633,6 +633,7 @@ grid-template-rows: 0.3fr 0.2fr 0.8fr 1fr;
   padding: 0 0.5em 0 0.5em;
   width: inherit;
   font-size: 1rem;
+  overflow-wrap: inherit;
   text-align: center;
 }
 #flower-logo {
