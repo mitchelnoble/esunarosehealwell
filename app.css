@@ -65,8 +65,8 @@
   align-self: center;
 }
 #nav-button {
-  width: 9em;
-  height: 3em;
+  width: 8.5em;
+  height: 2.5em;
   font-size: 1.3rem;
   border-radius: 0.7em;
   background-color: lightgray;
@@ -294,10 +294,10 @@
   width: 22em;
   height: 2.4em;
   text-align: center;
-  font-size: 2.6em;
+  font-size: 2.2em;
   background: linear-gradient(to right, rgb(99,77,169) 10%,white);
   color: black;
-  border: solid 0.05em black;
+  border: solid 0.04em black;
   border-radius: 0.3em;
 }
 
