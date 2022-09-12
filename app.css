@@ -596,11 +596,6 @@ justify-self: center;
   padding: 5em 0 2em 0;
 }
 
-.bold {
-  font-size: 2.5rem;
-  color: black;
-}
-
 @media only screen and (max-width: 1175px) {
 #schedule {
   height: max-content;
@@ -650,9 +645,6 @@ grid-template-rows: 0.3fr 0.2fr 0.8fr 1fr;
 }
 @media only screen and (max-width: 500px) {
   #appointment-text {
-    font-size: 1rem;
-  }
-  .bold {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
