@@ -48,6 +48,7 @@
   grid-area: logo;
   width: 3.9em;
   height: 3.5em;
+  overflow: hidden;
 }
 
 #nav-flower-logo:hover {
@@ -68,6 +69,7 @@
   height: 3em;
   font-size: 1.3rem;
   border-radius: 0.7em;
+  background-color: lightgray;
 }
 #nav-button:hover {
   cursor: pointer;
@@ -75,11 +77,16 @@
 }
 
 @media only screen and (max-width: 1175px) {
+  a {
+    width: 3.9em;
+    overflow: hidden;
+  }
   #nav {
     height: 3.7em;
   }
   #nav-flower-logo {
     padding: 0 0.5em 0 0;
+    overflow-x: hidden;
   }
   #nav-title {
     padding: 0 0 0 0.5em;
@@ -492,7 +499,7 @@
     height: auto;
     width: auto;
     padding: 0.5em 0.2em;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 3;
@@ -526,7 +533,7 @@
   width: 100%;
   height: 1.3em;
   margin: 0 0 1em 0;
-  font-size: 4em;
+  font-size: 3rem;
   background: linear-gradient(to right, rgb(99,77,169) 8%,white);
   border: solid 0.040em black;
   border-left: none;
@@ -559,6 +566,7 @@
   height: 3em;
   font-size: 1.2rem;
   border-radius: 0.7em;
+  background-color: lightgray;
 }
 #book-button:hover {
   cursor: pointer;
@@ -629,12 +637,12 @@ grid-template-rows: 0.3fr 0.2fr 0.8fr 1fr;
   grid-area: t;
   padding: 0 0.5em 0 0.5em;
   width: inherit;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
 }
 #flower-logo {
   grid-area: p;
-  width: max-content;
+  width: inherit;
 }
 .bold {
   font-size: 1.8rem;
@@ -645,6 +653,6 @@ grid-template-rows: 0.3fr 0.2fr 0.8fr 1fr;
     font-size: 1rem;
   }
   .bold {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
