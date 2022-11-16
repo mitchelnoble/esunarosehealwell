@@ -170,7 +170,7 @@
     font-size: 0.8rem;
   }
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 430px) {
   #nav-title {
     display: none;
   }
