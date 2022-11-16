@@ -100,10 +100,18 @@
   cursor: pointer;
 }
 
+#nav-text {
+  align-self: center;
+}
+
 #nav-title {
   color: white;
   grid-area: name;
   align-self: center;
+}
+
+#mobile-nav-title {
+  display: none;
 }
 
 #nav-button-form {
@@ -160,6 +168,21 @@
     width: 6em;
     height: 3em;
     font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 390px) {
+  #nav-title {
+    display: none;
+  }
+  #nav-text {
+    text-align: left;
+    align-self: center;
+    padding-left: 1em;
+  }
+  #mobile-nav-title {
+    display: contents;
+    color: white;
+    text-align: right;
   }
 }
 
