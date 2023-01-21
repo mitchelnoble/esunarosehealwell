@@ -1,0 +1,41 @@
+{
+  "name": "Esuna Rose Healing and Wellness",
+  "version": "1.0.0",
+  "description": "Massage and other wellness and healing services provided by Katherine.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "massage",
+    "wellness",
+    "healing",
+    "holistic",
+    "massage therapy",
+    "therapy"
+  ],
+  "author": "Mitchel Noble",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-player": "^2.11.0",
+    "react-router-dom": "^6.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}
