@@ -172,4 +172,9 @@
   height: 16em;
 }
 }
+@media only screen and (max-width: 375px) {
+#nav {
+  bottom: 35%;
+}
+}
 
