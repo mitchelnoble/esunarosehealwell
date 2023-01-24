@@ -50,6 +50,12 @@
   border-color: #664e96;
   background: transparent;
 }
+.purple-white-alt {
+  font-weight: 700;
+  color: white;
+  border-color: #664e96;
+  background: transparent;
+}
 .purple-white:hover {
   cursor: pointer;
   color: white;
