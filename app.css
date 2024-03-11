@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Alex;
-  src: url(./public/fonts/alex-brush/AlexBrush-Regular.ttf);
+  font-family: Awe;
+  src: url(./public/fonts/awesome-lathusca/Awesome-Lathusca.ttf);
 }
 
 @media only screen and (max-width: 1175px) {
@@ -16,17 +16,44 @@
   overflow: hidden;
 }
 
-#App {
+
+
+#massage-photo {
+  border: 1px solid red;
   width: 100vw;
-  height: 100vh;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 80vh;
+  background-image: url(./public/images/bodybackground.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #title {
+  padding-top: 0.3em;
+  width: 100vw;
+  font-family: 'Awe', sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  line-height: 2.2rem;
   color:#74616c;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+#title2 {
+  width: 100vw;
+  font-family: 'Awe', sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  color:#74616c;
+  text-align: center;
+}
+
+#motto {
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 2rem;
 }
 
 /* Button */
