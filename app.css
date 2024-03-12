@@ -12,58 +12,74 @@
 * {
   margin:0;
   padding:0 0 0 0;
-  font-family: 'Barlow', sans-serif;
+  font-family: sans-serif;
   overflow: hidden;
 }
 
-
+#hero-grid {
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
 
 #massage-photo {
-  border: 1px solid red;
   width: 100vw;
-  height: 80vh;
+  height: 70vh;
   background-image: url(./public/images/bodybackground.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#title {
-  padding-top: 0.3em;
-  width: 100vw;
+.title {
   font-family: 'Awe', sans-serif;
+  font-weight: 200;
+  font-size: 4rem;
   text-decoration: none;
   letter-spacing: 0.1rem;
-  line-height: 2.2rem;
+  line-height: 4rem;
   color:#74616c;
+}
+
+#hero-title {
+  padding-top: 0.2em;
+  width: 100vw;
+  height: 63vh;
   text-align: center;
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-#title2 {
-  width: 100vw;
-  font-family: 'Awe', sans-serif;
-  text-decoration: none;
-  letter-spacing: 0.1rem;
+
+#description {
+  line-height: 3rem;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  font-weight: 100;
   color:#74616c;
-  text-align: center;
+
 }
 
 #motto {
-  font-family: sans-serif;
+  display: flex;
+  justify-self: end;
+  font-size: 1.7rem;
   font-weight: 300;
+  letter-spacing: 0.2rem;
   line-height: 2rem;
+  color:#74616c;
 }
 
 /* Button */
 
-/* .outline {
+.outline {
   z-index: 3;
   background: transparent;
-  color: #1172c4;
   font-size: 14px;
-  border-color: #1172c4;
+  border-color: #74616c;
   border-style: solid;
   border-width: 2px;
   border-radius: 22px;
@@ -72,35 +88,17 @@
   transition: all 0.2s linear;
 }
 .purple-white {
-  font-weight: 700;
   color: white;
-  border-color: #664e96;
-  background: transparent;
-}
-.purple-white-alt {
-  font-weight: 700;
-  color: white;
-  border-color: #664e96;
-  background: transparent;
+  background: #74616c;
+  border-color: #74616c;
 }
 .purple-white:hover {
   cursor: pointer;
-  color: white;
-  background: #664e96;
-  border-color: #664e96;
-}
-.purple-black {
   font-weight: 700;
-  color: black;
-  border-color: #664e96;
+  color: #74616c;
+  border-color: #74616c;
   background: transparent;
 }
-.purple-black:hover {
-  cursor: pointer;
-  color: white;
-  background: #664e96;
-  border-color: #664e96;
-} */
 
 
 /*Navigation Bar*/
