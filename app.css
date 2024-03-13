@@ -29,6 +29,13 @@
   background-color: #74616c;
 }
 
+#title-line {
+  width: 70%;
+  height: auto;
+  background-color: #74616c;
+  border-top: 1px solid #74616c;
+}
+
 #hero-grid {
   height: 100vh;
   display: flex;
