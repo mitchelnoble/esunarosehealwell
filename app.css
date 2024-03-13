@@ -16,6 +16,19 @@
   overflow: hidden;
 }
 
+#logo {
+  position: absolute;
+  top: 45%;
+  left: 46%;
+  height: 7.5em;
+  width: 7.8em;
+  border-radius: 50%;
+  border: 3px solid white;
+  outline: 7px double white;
+  outline-offset: 0.2rem;
+  background-color: #74616c;
+}
+
 #hero-grid {
   height: 100vh;
   display: flex;
