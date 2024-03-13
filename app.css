@@ -1,32 +1,92 @@
 @font-face {
-  font-family: Alex;
-  src: url(./public/fonts/alex-brush/AlexBrush-Regular.ttf);
-}
-
-@media only screen and (max-width: 1175px) {
-  .mobile {
-    font-size: 0.8rem;
-  }
+  font-family: Awe;
+  src: url(./public/fonts/awesome-lathusca/Awesome-Lathusca.ttf);
 }
 
 * {
   margin:0;
   padding:0 0 0 0;
-  font-family: 'Barlow', sans-serif;
+  font-family: sans-serif;
   overflow: hidden;
 }
 
-#App {
-  width: 100vw;
+#logo {
+  position: absolute;
+  top: 45%;
+  left: 46%;
+  height: 7.5em;
+  width: 7.8em;
+  border-radius: 50%;
+  border: 3px solid white;
+  outline: 7px double white;
+  outline-offset: 0.2rem;
+  background-color: #74616c;
+}
+
+#title-line {
+  width: 70%;
+  height: auto;
+  background-color: #74616c;
+  border-top: 1px solid #74616c;
+}
+
+#hero-grid {
   height: 100vh;
-  background-color: white;
   display: flex;
+  flex-flow: row;
   align-items: center;
   justify-content: center;
 }
 
-.hyper-link {
+
+#massage-photo {
+  width: 100vw;
+  height: 70vh;
+  background-image: url(./public/images/bodybackground.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  font-family: 'Awe', sans-serif;
+  font-weight: 200;
+  font-size: 4rem;
   text-decoration: none;
+  letter-spacing: 0.1rem;
+  line-height: 4rem;
+  color:#74616c;
+}
+
+#hero-title {
+  padding-top: 0.2em;
+  width: 100vw;
+  height: 63vh;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#description {
+  line-height: 3rem;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  font-weight: 100;
+  color:#74616c;
+  
+}
+
+#motto {
+  display: flex;
+  justify-self: end;
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  color:#74616c;
 }
 
 /* Button */
@@ -34,9 +94,8 @@
 .outline {
   z-index: 3;
   background: transparent;
-  color: #1172c4;
   font-size: 14px;
-  border-color: #1172c4;
+  border-color: #74616c;
   border-style: solid;
   border-width: 2px;
   border-radius: 22px;
@@ -45,142 +104,87 @@
   transition: all 0.2s linear;
 }
 .purple-white {
-  font-weight: 700;
   color: white;
-  border-color: #664e96;
-  background: transparent;
-}
-.purple-white-alt {
-  font-weight: 700;
-  color: white;
-  border-color: #664e96;
-  background: transparent;
+  background: #74616c;
+  border-color: #74616c;
 }
 .purple-white:hover {
   cursor: pointer;
-  color: white;
-  background: #664e96;
-  border-color: #664e96;
-}
-.purple-black {
   font-weight: 700;
-  color: black;
-  border-color: #664e96;
+  color: #74616c;
+  border-color: #74616c;
   background: transparent;
 }
-.purple-black:hover {
-  cursor: pointer;
-  color: white;
-  background: #664e96;
-  border-color: #664e96;
-}
 
-
-/*Navigation Bar*/
-
-#nav {
-  width: 100%;
-  height: 15.5em;
-  padding: 0.5em 0 1em 0;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-areas: 
-  "c"
-  "m"
-  "pn"
-  "e"
-  "p"
-  "b"
-  ;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  border-bottom: solid 0.1em grey;
-  overflow: hidden;
-  background: linear-gradient(to right,rgb(51,21,78), rgb(82,18,79), rgb(111,89,181)) ;
-  position: absolute;
-  bottom: 44px;
-}
-
-#nav-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#nav-title {
-  color: white;
-  font-size: 1.5rem;
-  grid-area: c;
-  text-align: center;
-  align-self: center;
-}
-
-#mobile-nav-title {
-  display: none;
-}
-
-#nav-message {
-  grid-area: m;
-  text-align: center;
-  align-self: center;
-  justify-content: center;
-}
-#nav-phone {
-  grid-area: pn;
-  text-align: center;
-}
-#nav-email {
-  grid-area: e;
-  text-align: center;
-}
-
-#nav-prompt {
-  grid-area: p;
-  text-align: center;
-}
-
-#nav-button-form {
-  grid-area: b;
-  text-align: center;
-  align-self: center;
-  justify-content: center;
-}
-
-#construction-button {
-  font-size: 1.5rem;
-  align-self: center;
-  justify-self: center;
-  width: 15em;
-
-}
-
-#nav-button {
-  width: 8.5em;
-  height: 2.5em;
-  font-size: 1.3rem;
-  border-radius: 0.7em;
-  background-color: lightgray;
-}
-#nav-button:hover {
-  cursor: pointer;
-  background-color: rgb(111,89,181);
-}
-
-@media only screen and (max-width: 1050px) {
-  #nav {
-    bottom: 37%;
+@media only screen and (max-width: 1060px) {
+  #hero-title {
+    height: 72vh;
   }
+  .title {
+    font-size: 2.7rem;
+    line-height: 3.5rem;
+  }
+  #logo {
+    height: 4.2em;
+    width: 4.5em;
+  }
+  #description {
+    font-size: 1.4rem;
+  }
+  #motto {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 447px) {
+  #hero-grid {
+    display: grid;
+    grid-template-areas: 
+    'a'
+    'b';
+  }
+  #massage-photo {
+    grid-area: a;
+    height: 40vh;
+    width: 100%;
+  }
+  #hero-title {
+    height: 63vh;
+    grid-area: b;
+    justify-content: space-evenly;
+  }
+  #title-line {
+    margin: -3rem 0 -2em 0;
+  }
+  #logo {
+    height: 3.8em;
+    width: 4.1em;
+    top: 35%;
+    left: 40%;
+  }
+  .title {
+    padding-top: 0rem;
+    font-weight: 200;
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+    color:#74616c;
+  }
+  #description {
+    margin-bottom: -1.5em;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+    color:#74616c;
+  }
+  #construction-button {
+    margin-bottom: 0.5em;
+  }
+  #motto {
+    margin-top: -2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+}
 
-}
-@media only screen and (max-width: 500px) {
-#nav {
-  height: 16em;
-}
-}
-@media only screen and (max-width: 375px) {
-#nav {
-  bottom: 35%;
-}
-}
 
