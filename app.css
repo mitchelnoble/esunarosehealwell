@@ -7,7 +7,10 @@
   margin:0;
   padding:0 0 0 0;
   font-family: sans-serif;
-  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #logo {
@@ -158,7 +161,7 @@
   #logo {
     height: 3.8em;
     width: 4.1em;
-    top: 35%;
+    top: 38%;
     left: 40%;
   }
   .title {
@@ -170,7 +173,7 @@
     color:#74616c;
   }
   #description {
-    margin-bottom: -1.5em;
+    margin-bottom: -1.9em;
     line-height: 1.7rem;
     font-size: 1.3rem;
     font-weight: 200;
@@ -180,7 +183,7 @@
     margin-bottom: 0.5em;
   }
   #motto {
-    margin-top: -2rem;
+    margin-top: -4rem;
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 0.1rem;
